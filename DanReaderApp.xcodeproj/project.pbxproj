@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C92C2142151DADAC0093755F /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C92C2133151DADAB0093755F /* Reachability.m */; };
+		C92C2143151DADAC0093755F /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = C92C2134151DADAB0093755F /* ASIAuthenticationDialog.m */; };
+		C92C2144151DADAC0093755F /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C92C2136151DADAB0093755F /* ASIFormDataRequest.m */; };
+		C92C2145151DADAC0093755F /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C92C2138151DADAB0093755F /* ASIHTTPRequest.m */; };
+		C92C2146151DADAC0093755F /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = C92C213C151DADAB0093755F /* ASIInputStream.m */; };
+		C92C2147151DADAC0093755F /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = C92C213E151DADAB0093755F /* ASINetworkQueue.m */; };
+		C92C2148151DADAC0093755F /* ASINSStringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C92C2140151DADAB0093755F /* ASINSStringAdditions.m */; };
+		C92C2150151DAF430093755F /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C92C214F151DAF430093755F /* MBProgressHUD.m */; };
+		C92C2153151DB2270093755F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92C2152151DB2270093755F /* Security.framework */; };
+		C92C2155151DB2460093755F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92C2154151DB2460093755F /* CFNetwork.framework */; };
+		C92C2157151DB2710093755F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92C2156151DB2710093755F /* SystemConfiguration.framework */; };
+		C92C2159151DB2A50093755F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92C2158151DB2A50093755F /* MobileCoreServices.framework */; };
+		C92C215B151DB2C10093755F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C92C215A151DB2C10093755F /* libz.dylib */; };
+		C9B762E5151D9F8200DC31CE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B762E4151D9F8200DC31CE /* UIKit.framework */; };
+		C9B762E7151D9F8200DC31CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B762E6151D9F8200DC31CE /* Foundation.framework */; };
+		C9B762E9151D9F8200DC31CE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B762E8151D9F8200DC31CE /* CoreGraphics.framework */; };
+		C9B762EF151D9F8200DC31CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9B762ED151D9F8200DC31CE /* InfoPlist.strings */; };
+		C9B762F1151D9F8200DC31CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B762F0151D9F8200DC31CE /* main.m */; };
+		C9B762F5151D9F8200DC31CE /* testdelegateAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B762F4151D9F8200DC31CE /* testdelegateAppDelegate.m */; };
+		C9B76305151DA07300DC31CE /* FirstViewCintroller.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B76303151DA07300DC31CE /* FirstViewCintroller.m */; };
+		C9B76306151DA07300DC31CE /* FirstViewCintroller.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9B76304151DA07300DC31CE /* FirstViewCintroller.xib */; };
+		C9B7630B151DA34F00DC31CE /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B76309151DA34F00DC31CE /* LoginViewController.m */; };
+		C9B7630C151DA34F00DC31CE /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9B7630A151DA34F00DC31CE /* LoginViewController.xib */; };
+		C9B76311151DA37D00DC31CE /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B7630F151DA37D00DC31CE /* RegistrationViewController.m */; };
+		C9B76312151DA37D00DC31CE /* RegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9B76310151DA37D00DC31CE /* RegistrationViewController.xib */; };
+		C9B76317151DA3B100DC31CE /* ForgottenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B76315151DA3B100DC31CE /* ForgottenViewController.m */; };
+		C9B76318151DA3B100DC31CE /* ForgottenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9B76316151DA3B100DC31CE /* ForgottenViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C92C2131151DADAB0093755F /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
+		C92C2132151DADAB0093755F /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		C92C2133151DADAB0093755F /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		C92C2134151DADAB0093755F /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
+		C92C2135151DADAB0093755F /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
+		C92C2136151DADAB0093755F /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
+		C92C2137151DADAB0093755F /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
+		C92C2138151DADAB0093755F /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
+		C92C2139151DADAB0093755F /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		C92C213A151DADAB0093755F /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		C92C213B151DADAB0093755F /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
+		C92C213C151DADAB0093755F /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
+		C92C213D151DADAB0093755F /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
+		C92C213E151DADAB0093755F /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
+		C92C213F151DADAB0093755F /* ASINSStringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINSStringAdditions.h; sourceTree = "<group>"; };
+		C92C2140151DADAB0093755F /* ASINSStringAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASINSStringAdditions.m; sourceTree = "<group>"; };
+		C92C2141151DADAB0093755F /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
+		C92C214B151DAEA10093755F /* constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
+		C92C214E151DAF430093755F /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		C92C214F151DAF430093755F /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		C92C2152151DB2270093755F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		C92C2154151DB2460093755F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		C92C2156151DB2710093755F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C92C2158151DB2A50093755F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		C92C215A151DB2C10093755F /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		C9B762E0151D9F8200DC31CE /* DanReaderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DanReaderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9B762E4151D9F8200DC31CE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C9B762E6151D9F8200DC31CE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C9B762E8151D9F8200DC31CE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C9B762EC151D9F8200DC31CE /* DanReaderApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DanReaderApp-Info.plist"; sourceTree = "<group>"; };
+		C9B762EE151D9F8200DC31CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C9B762F0151D9F8200DC31CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C9B762F2151D9F8200DC31CE /* DanReaderApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DanReaderApp-Prefix.pch"; sourceTree = "<group>"; };
+		C9B762F3151D9F8200DC31CE /* testdelegateAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testdelegateAppDelegate.h; sourceTree = "<group>"; };
+		C9B762F4151D9F8200DC31CE /* testdelegateAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testdelegateAppDelegate.m; sourceTree = "<group>"; };
+		C9B76302151DA07300DC31CE /* FirstViewCintroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewCintroller.h; sourceTree = "<group>"; };
+		C9B76303151DA07300DC31CE /* FirstViewCintroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewCintroller.m; sourceTree = "<group>"; };
+		C9B76304151DA07300DC31CE /* FirstViewCintroller.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstViewCintroller.xib; sourceTree = "<group>"; };
+		C9B76308151DA34F00DC31CE /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		C9B76309151DA34F00DC31CE /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		C9B7630A151DA34F00DC31CE /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		C9B7630E151DA37D00DC31CE /* RegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistrationViewController.h; sourceTree = "<group>"; };
+		C9B7630F151DA37D00DC31CE /* RegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistrationViewController.m; sourceTree = "<group>"; };
+		C9B76310151DA37D00DC31CE /* RegistrationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegistrationViewController.xib; sourceTree = "<group>"; };
+		C9B76314151DA3B100DC31CE /* ForgottenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgottenViewController.h; sourceTree = "<group>"; };
+		C9B76315151DA3B100DC31CE /* ForgottenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgottenViewController.m; sourceTree = "<group>"; };
+		C9B76316151DA3B100DC31CE /* ForgottenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForgottenViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9B762DD151D9F8200DC31CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C92C215B151DB2C10093755F /* libz.dylib in Frameworks */,
+				C92C2159151DB2A50093755F /* MobileCoreServices.framework in Frameworks */,
+				C92C2157151DB2710093755F /* SystemConfiguration.framework in Frameworks */,
+				C92C2155151DB2460093755F /* CFNetwork.framework in Frameworks */,
+				C92C2153151DB2270093755F /* Security.framework in Frameworks */,
+				C9B762E5151D9F8200DC31CE /* UIKit.framework in Frameworks */,
+				C9B762E7151D9F8200DC31CE /* Foundation.framework in Frameworks */,
+				C9B762E9151D9F8200DC31CE /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C92C214A151DADB40093755F /* ASIHTTP */ = {
+			isa = PBXGroup;
+			children = (
+				C92C2131151DADAB0093755F /* ASIAuthenticationDialog.h */,
+				C92C2132151DADAB0093755F /* Reachability.h */,
+				C92C2133151DADAB0093755F /* Reachability.m */,
+				C92C2134151DADAB0093755F /* ASIAuthenticationDialog.m */,
+				C92C2135151DADAB0093755F /* ASIFormDataRequest.h */,
+				C92C2136151DADAB0093755F /* ASIFormDataRequest.m */,
+				C92C2137151DADAB0093755F /* ASIHTTPRequest.h */,
+				C92C2138151DADAB0093755F /* ASIHTTPRequest.m */,
+				C92C2139151DADAB0093755F /* ASIHTTPRequestDelegate.h */,
+				C92C213A151DADAB0093755F /* ASIHTTPRequestConfig.h */,
+				C92C213B151DADAB0093755F /* ASIInputStream.h */,
+				C92C213C151DADAB0093755F /* ASIInputStream.m */,
+				C92C213D151DADAB0093755F /* ASINetworkQueue.h */,
+				C92C213E151DADAB0093755F /* ASINetworkQueue.m */,
+				C92C213F151DADAB0093755F /* ASINSStringAdditions.h */,
+				C92C2140151DADAB0093755F /* ASINSStringAdditions.m */,
+				C92C2141151DADAB0093755F /* ASIProgressDelegate.h */,
+			);
+			name = ASIHTTP;
+			sourceTree = "<group>";
+		};
+		C92C2151151DAF480093755F /* MBProresdsHu */ = {
+			isa = PBXGroup;
+			children = (
+				C92C214E151DAF430093755F /* MBProgressHUD.h */,
+				C92C214F151DAF430093755F /* MBProgressHUD.m */,
+			);
+			name = MBProresdsHu;
+			sourceTree = "<group>";
+		};
+		C9B762D5151D9F8200DC31CE = {
+			isa = PBXGroup;
+			children = (
+				C92C215A151DB2C10093755F /* libz.dylib */,
+				C92C2158151DB2A50093755F /* MobileCoreServices.framework */,
+				C92C2156151DB2710093755F /* SystemConfiguration.framework */,
+				C92C2154151DB2460093755F /* CFNetwork.framework */,
+				C92C2152151DB2270093755F /* Security.framework */,
+				C92C2151151DAF480093755F /* MBProresdsHu */,
+				C92C214B151DAEA10093755F /* constants.h */,
+				C92C214A151DADB40093755F /* ASIHTTP */,
+				C9B76319151DA3B500DC31CE /* ForGottenViewController */,
+				C9B76313151DA38100DC31CE /* RegistrationViewController */,
+				C9B7630D151DA35600DC31CE /* LoginViewController */,
+				C9B76307151DA07700DC31CE /* FirstViewController */,
+				C9B762EA151D9F8200DC31CE /* DanReaderApp */,
+				C9B762E3151D9F8200DC31CE /* Frameworks */,
+				C9B762E1151D9F8200DC31CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C9B762E1151D9F8200DC31CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9B762E0151D9F8200DC31CE /* DanReaderApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9B762E3151D9F8200DC31CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9B762E4151D9F8200DC31CE /* UIKit.framework */,
+				C9B762E6151D9F8200DC31CE /* Foundation.framework */,
+				C9B762E8151D9F8200DC31CE /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9B762EA151D9F8200DC31CE /* DanReaderApp */ = {
+			isa = PBXGroup;
+			children = (
+				C9B762F3151D9F8200DC31CE /* testdelegateAppDelegate.h */,
+				C9B762F4151D9F8200DC31CE /* testdelegateAppDelegate.m */,
+				C9B762EB151D9F8200DC31CE /* Supporting Files */,
+			);
+			path = DanReaderApp;
+			sourceTree = "<group>";
+		};
+		C9B762EB151D9F8200DC31CE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9B762EC151D9F8200DC31CE /* DanReaderApp-Info.plist */,
+				C9B762ED151D9F8200DC31CE /* InfoPlist.strings */,
+				C9B762F0151D9F8200DC31CE /* main.m */,
+				C9B762F2151D9F8200DC31CE /* DanReaderApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C9B76307151DA07700DC31CE /* FirstViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C9B76302151DA07300DC31CE /* FirstViewCintroller.h */,
+				C9B76303151DA07300DC31CE /* FirstViewCintroller.m */,
+				C9B76304151DA07300DC31CE /* FirstViewCintroller.xib */,
+			);
+			name = FirstViewController;
+			sourceTree = "<group>";
+		};
+		C9B7630D151DA35600DC31CE /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C9B76308151DA34F00DC31CE /* LoginViewController.h */,
+				C9B76309151DA34F00DC31CE /* LoginViewController.m */,
+				C9B7630A151DA34F00DC31CE /* LoginViewController.xib */,
+			);
+			name = LoginViewController;
+			sourceTree = "<group>";
+		};
+		C9B76313151DA38100DC31CE /* RegistrationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C9B7630E151DA37D00DC31CE /* RegistrationViewController.h */,
+				C9B7630F151DA37D00DC31CE /* RegistrationViewController.m */,
+				C9B76310151DA37D00DC31CE /* RegistrationViewController.xib */,
+			);
+			name = RegistrationViewController;
+			sourceTree = "<group>";
+		};
+		C9B76319151DA3B500DC31CE /* ForGottenViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C9B76314151DA3B100DC31CE /* ForgottenViewController.h */,
+				C9B76315151DA3B100DC31CE /* ForgottenViewController.m */,
+				C9B76316151DA3B100DC31CE /* ForgottenViewController.xib */,
+			);
+			name = ForGottenViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C9B762DF151D9F8200DC31CE /* DanReaderApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9B762F8151D9F8200DC31CE /* Build configuration list for PBXNativeTarget "DanReaderApp" */;
+			buildPhases = (
+				C9B762DC151D9F8200DC31CE /* Sources */,
+				C9B762DD151D9F8200DC31CE /* Frameworks */,
+				C9B762DE151D9F8200DC31CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DanReaderApp;
+			productName = DanReaderApp;
+			productReference = C9B762E0151D9F8200DC31CE /* DanReaderApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9B762D7151D9F8200DC31CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "sauravsinha007@gmail.com";
+			};
+			buildConfigurationList = C9B762DA151D9F8200DC31CE /* Build configuration list for PBXProject "DanReaderApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C9B762D5151D9F8200DC31CE;
+			productRefGroup = C9B762E1151D9F8200DC31CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9B762DF151D9F8200DC31CE /* DanReaderApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9B762DE151D9F8200DC31CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9B762EF151D9F8200DC31CE /* InfoPlist.strings in Resources */,
+				C9B76306151DA07300DC31CE /* FirstViewCintroller.xib in Resources */,
+				C9B7630C151DA34F00DC31CE /* LoginViewController.xib in Resources */,
+				C9B76312151DA37D00DC31CE /* RegistrationViewController.xib in Resources */,
+				C9B76318151DA3B100DC31CE /* ForgottenViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9B762DC151D9F8200DC31CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9B762F1151D9F8200DC31CE /* main.m in Sources */,
+				C9B762F5151D9F8200DC31CE /* testdelegateAppDelegate.m in Sources */,
+				C9B76305151DA07300DC31CE /* FirstViewCintroller.m in Sources */,
+				C9B7630B151DA34F00DC31CE /* LoginViewController.m in Sources */,
+				C9B76311151DA37D00DC31CE /* RegistrationViewController.m in Sources */,
+				C9B76317151DA3B100DC31CE /* ForgottenViewController.m in Sources */,
+				C92C2142151DADAC0093755F /* Reachability.m in Sources */,
+				C92C2143151DADAC0093755F /* ASIAuthenticationDialog.m in Sources */,
+				C92C2144151DADAC0093755F /* ASIFormDataRequest.m in Sources */,
+				C92C2145151DADAC0093755F /* ASIHTTPRequest.m in Sources */,
+				C92C2146151DADAC0093755F /* ASIInputStream.m in Sources */,
+				C92C2147151DADAC0093755F /* ASINetworkQueue.m in Sources */,
+				C92C2148151DADAC0093755F /* ASINSStringAdditions.m in Sources */,
+				C92C2150151DAF430093755F /* MBProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C9B762ED151D9F8200DC31CE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9B762EE151D9F8200DC31CE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C9B762F6151D9F8200DC31CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C9B762F7151D9F8200DC31CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C9B762F9151D9F8200DC31CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DanReaderApp/DanReaderApp-Prefix.pch";
+				INFOPLIST_FILE = "DanReaderApp/DanReaderApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C9B762FA151D9F8200DC31CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DanReaderApp/DanReaderApp-Prefix.pch";
+				INFOPLIST_FILE = "DanReaderApp/DanReaderApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9B762DA151D9F8200DC31CE /* Build configuration list for PBXProject "DanReaderApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9B762F6151D9F8200DC31CE /* Debug */,
+				C9B762F7151D9F8200DC31CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9B762F8151D9F8200DC31CE /* Build configuration list for PBXNativeTarget "DanReaderApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9B762F9151D9F8200DC31CE /* Debug */,
+				C9B762FA151D9F8200DC31CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9B762D7151D9F8200DC31CE /* Project object */;
+}
