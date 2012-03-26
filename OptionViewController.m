@@ -1,14 +1,14 @@
 //
-//  FirstViewCintroller.m
+//  OptionViewController.m
 //  DanReaderApp
 //
-//  Created by saurav sinha on 24/03/12.
+//  Created by preet dhillon on 26/03/12.
 //  Copyright (c) 2012 sauravsinha007@gmail.com. All rights reserved.
 //
 
-#import "FirstViewCintroller.h"
+#import "OptionViewController.h"
 
-@implementation FirstViewCintroller
+@implementation OptionViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,6 +33,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.navigationItem.rightBarButtonItem=[[UIBarButtonItem alloc]initWithTitle:@"Card" style:UIBarButtonItemStyleBordered target:self action:@selector(clickToCard:)];
 }
 
 - (void)viewDidUnload
@@ -47,18 +48,21 @@
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
--(IBAction)clickToActionsButton:(id)sender
+
+-(IBAction)clickToScan:(id)sender
 {
-    UIViewController *ViewController;
-    if([sender tag]==0)
-    {
-        ViewController=[[LoginViewController alloc]init];
-    }
-    else if([sender tag]==1)
-        ViewController=[[RegistrationViewController alloc]init];
-    else if([sender tag]==2)
-        ViewController=[[ForgottenViewController alloc]init];
     
-     [self.navigationController pushViewController:ViewController animated:YES];
+}
+-(IBAction)clickToMAnnualEntry:(id)sender
+{
+    
+}
+-(IBAction)clickToCard:(id)sender
+{
+    
+}
+-(IBAction)clickToLogout:(id)sender
+{
+    
 }
 @end

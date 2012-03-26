@@ -32,14 +32,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
-//    Company name (no more than 50 characters)
-//    Email (no more than 50 characters and correct email formatting)
-//    Address (no more than 50 char)
-//    City (no more than 30 chars)
-//    State (2 characters)
-//    Zip (5 digits e.g. 11111)
-//    Password (minimum of 6 chars, max of 20)
+    self.navigationItem.rightBarButtonItem=[[UIBarButtonItem alloc]initWithTitle:@"Save" style:UIBarButtonItemStyleBordered target:self action:@selector(clickToSaveBtn:)];
+    
     arrayreg=[[NSMutableArray alloc]initWithObjects:@"Company name",@"Email",@"Address",@"City",@"State",@"Zip",@"Password", nil];
     arrayTxtFld=[[NSMutableArray alloc]init];
     for(int i=0;i<[arrayreg count];i++)
@@ -110,7 +104,6 @@
     }
     
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        NSLog(@"kdfnbkndkfv");
                
     return cell;
 }
@@ -122,6 +115,119 @@
 {
     return [arrayreg  objectAtIndex:section];
 }
+#pragma mark- User Defined functions
+-(IBAction)clickToSaveBtn:(id)sender
+{
+    
+    for(int i=0;i<[arrayTxtFld count];i++)
+    {
+        if([[[arrayTxtFld objectAtIndex:i] text] length]==0)
+        {
+            [ModalController FuncAlertMsg:@"Each Field is mandatory!" inController:nil];
+            return;
+        }
+    }
+    NSString *emailRegex = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"; 
+    
+    NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex]; 
+    
+   
+    if([[[arrayTxtFld objectAtIndex:0]text] length]>50)
+    {
+        [ModalController FuncAlertMsg:@"Company name not more 50 characters." inController:nil];
+        return; 
+    }
+    if(![emailTest evaluateWithObject:[[arrayTxtFld objectAtIndex:1]text]])
+    {
+        [ModalController FuncAlertMsg:@"Please Correct the Email Address!" inController:nil];
+        return;
+    }
+    if([[[arrayTxtFld objectAtIndex:2]text] length]>50)
+    {
+        [ModalController FuncAlertMsg:@"Company name not more 50 characters." inController:nil];
+        return; 
+    }
+    if([[[arrayTxtFld objectAtIndex:3]text] length]>30)
+    {
+        [ModalController FuncAlertMsg:@"City name not more 30 characters." inController:nil];
+        return; 
+    }
+    if([[[arrayTxtFld objectAtIndex:4]text] length]!=2)
+    {
+        [ModalController FuncAlertMsg:@"State name should be 2 characters." inController:nil];
+        return; 
+    }
+    if([[[arrayTxtFld objectAtIndex:5]text] length]!=5)
+    {
+        [ModalController FuncAlertMsg:@"Zip code should be 5 digits." inController:nil];
+        return; 
+    }
+    if([[[arrayTxtFld objectAtIndex:6]text] length]<6 || [[[arrayTxtFld objectAtIndex:6]text] length]>20)
+    {
+        [ModalController FuncAlertMsg:@"Password should be 6(min.) to 20(max.)." inController:nil];
+        return; 
+    }
+    MBProgressHUD *hud=[MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
+    hud.labelText=@"Loading...";
+    [NSTimer scheduledTimerWithTimeInterval:0 target:self selector:@selector(loadDataFromUrl) userInfo:nil repeats:NO]; 
+}
+-(void)loadDataFromUrl
+{
+    //Name, email, address, city, state, zip, pass
+    [fieldEdit resignFirstResponder];
+    NSURL *url = [NSURL URLWithString:URLREGISTRATION];
+    ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
+    [request setPostValue:[[arrayTxtFld objectAtIndex:0]text] forKey:@"Name"];
+    [request setPostValue:[[arrayTxtFld objectAtIndex:1]text] forKey:@"email"];
+    [request setPostValue:[[arrayTxtFld objectAtIndex:2]text] forKey:@"address"];
+    [request setPostValue:[[arrayTxtFld objectAtIndex:3]text] forKey:@"city"];
+    [request setPostValue:[[arrayTxtFld objectAtIndex:4]text] forKey:@"state"];
+    [request setPostValue:[[arrayTxtFld objectAtIndex:5]text] forKey:@"zip"];
+    [request setPostValue:[[arrayTxtFld objectAtIndex:6]text] forKey:@"pass"];
+    NSLog(@"login url=%@",request);
+    [request setDelegate:self];
+    [request startSynchronous];
+}
+#pragma mark-ASIHTTP DELEGATES
+- (void)requestFinished:(ASIHTTPRequest *)request
+{
+    //    // Use when fetching text data
+    NSString *responseString = [request responseString];
+    NSLog(@"responseString=%@",responseString);
+     [MBProgressHUD hideHUDForView:self.navigationController.view animated:YES];
+    if([responseString isEqualToString:@"Thank you. Please check your email for account validation"])
+    {
+          
+       // [ModalController FuncAlertMsg:responseString inController:self];
+        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:nil message:responseString delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
+            [alert show];
+        [fieldEdit setText:nil];
+    }
+    else
+        [ModalController FuncAlertMsg:responseString inController:nil];
+    
+       //NSLog(@"response data=%@",responseData);
+    //    NSDictionary *_xmlDictionary=[XMLReader dictionaryForXMLData:responseData error:nil];
+   
+    //    arrayRead=[[NSMutableArray alloc]initWithArray:[[_xmlDictionary objectForKey:@"cardinfo"]objectForKey:@"card"]];
+    //    NSLog(@"arrayRead=%@",arrayRead);
+    //    if([arrayRead count]==0)
+    //    {
+    //        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:nil message:@"No record found." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+    //        [alert show];
+    //    }
+    //    else
+    //        [tableViewRead reloadData];
+}
+
+- (void)requestFailed:(ASIHTTPRequest *)request
+{
+    [MBProgressHUD hideHUDForView:self.view animated:YES];
+    
+    NSError *error = [request error];
+    NSLog(@"Error %@",error);
+}
+
 
 #pragma mark -UITextField Delegates
 - (void)textFieldDidBeginEditing:(UITextField *)textField
@@ -140,4 +246,10 @@
 
     return YES;
 }
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 @end

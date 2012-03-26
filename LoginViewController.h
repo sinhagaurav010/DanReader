@@ -11,10 +11,13 @@
 #import "ASIFormDataRequest.h"
 #import "constants.h"
 #import "MBProgressHUD.h"
+#import "ModalController.h"
+#import "XMLReader.h"
 @interface LoginViewController : UIViewController
 {
     IBOutlet UITextField *txtFldEmail;
     IBOutlet UITextField *txtFldPswd;
+    NSMutableArray *arrayLogin;
 
 }
 -(void)loadDataFromUrl;

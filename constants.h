@@ -9,3 +9,5 @@
 #import <Foundation/Foundation.h>
 
 #define URLLOGIN @"https://www.goatstamp.com/corplogincheck.php"
+#define URLREGISTRATION @"https://www.goatstamp.com/compreg.php"
+#define URLFORGOT @"https://www.goatstamp.com/corpforgotlogin.php"

@@ -7,7 +7,7 @@
 //
 
 #import "LoginViewController.h"
-
+#import "OptionViewController.h"
 @implementation LoginViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -74,6 +74,39 @@
     [request setDelegate:self];
     [request startSynchronous];
 }
+#pragma mark-ASIHTTP DELEGATES
+- (void)requestFinished:(ASIHTTPRequest *)request
+{
+    //    // Use when fetching text data
+    NSString *responseString = [request responseString];
+    NSLog(@"%@",responseString);
+    // Use when fetching binary data
+    NSData *responseData = [request responseData];
+    //NSLog(@"response data=%@",responseData);
+    NSDictionary *_xmlDictionary=[XMLReader dictionaryForXMLData:responseData error:nil];
+    [MBProgressHUD hideHUDForView:self.navigationController.view animated:YES];
+    NSLog(@"_xmlDictionary=%@",_xmlDictionary);
+    
+   // arrayLogin=[[NSMutableArray alloc]initWithArray:[[_xmlDictionary objectForKey:@"cardinfo"]objectForKey:@"card"]];
+    //    NSLog(@"arrayRead=%@",arrayRead);
+    //    if([arrayRead count]==0)
+    //    {
+    //        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:nil message:@"No record found." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+    //        [alert show];
+    //    }
+    //    else
+    //        [tableViewRead reloadData];
+    OptionViewController *option=[[OptionViewController alloc]init];
+    [self.navigationController pushViewController:option animated:YES];
+}
+
+- (void)requestFailed:(ASIHTTPRequest *)request
+{
+    [MBProgressHUD hideHUDForView:self.view animated:YES];
+    
+    NSError *error = [request error];
+    NSLog(@"Error %@",error);
+}
 
 -(IBAction)clickToCancelBtn:(id)sender
 {
@@ -85,35 +118,6 @@
 {
     [textField resignFirstResponder];
     return YES;
-}
-#pragma mark-ASIHTTP DELEGATES
-- (void)requestFinished:(ASIHTTPRequest *)request
-{
-    //    // Use when fetching text data
-    NSString *responseString = [request responseString];
-    NSLog(@"%@",responseString);
-    // Use when fetching binary data
-    NSData *responseData = [request responseData];
-    //NSLog(@"response data=%@",responseData);
-    //    NSDictionary *_xmlDictionary=[XMLReader dictionaryForXMLData:responseData error:nil];
-    [MBProgressHUD hideHUDForView:self.navigationController.view animated:YES];
-    //    arrayRead=[[NSMutableArray alloc]initWithArray:[[_xmlDictionary objectForKey:@"cardinfo"]objectForKey:@"card"]];
-    //    NSLog(@"arrayRead=%@",arrayRead);
-    //    if([arrayRead count]==0)
-    //    {
-    //        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:nil message:@"No record found." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
-    //        [alert show];
-    //    }
-    //    else
-    //        [tableViewRead reloadData];
-}
-
-- (void)requestFailed:(ASIHTTPRequest *)request
-{
-    [MBProgressHUD hideHUDForView:self.view animated:YES];
-    
-    NSError *error = [request error];
-    NSLog(@"Error %@",error);
 }
 
 @end

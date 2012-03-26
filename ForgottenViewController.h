@@ -7,7 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ForgottenViewController : UIViewController
+#import "constants.h"
+#import "MBProgressHUD.h"
+#import "ModalController.h"
+#import "XMLReader.h"
+#import "ASIHTTPRequest.h"
+#import "ASIFormDataRequest.h"
+@interface ForgottenViewController : UIViewController<UITextFieldDelegate>
+{
+    IBOutlet UITextField *txtFldEmail;
+}
+-(void)loadDataFromUrl;
+-(IBAction)clickToOkBtn:(id)sender;
+-(IBAction)clickToCancelBtn:(id)sender;
 
 @end

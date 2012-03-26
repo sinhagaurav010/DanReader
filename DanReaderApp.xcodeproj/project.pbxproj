@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D28B7D0151DD25800A06DB6 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D28B7CD151DD25800A06DB6 /* XMLReader.m */; };
+		5D28B7D1151DD25800A06DB6 /* ModalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D28B7CE151DD25800A06DB6 /* ModalController.m */; };
+		5DCDB14E1520C554008F1955 /* OptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DCDB14C1520C554008F1955 /* OptionViewController.m */; };
+		5DCDB14F1520C554008F1955 /* OptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DCDB14D1520C554008F1955 /* OptionViewController.xib */; };
+		5DCDB1551520C75B008F1955 /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DCDB1531520C75B008F1955 /* ScanViewController.m */; };
+		5DCDB1561520C75B008F1955 /* ScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DCDB1541520C75B008F1955 /* ScanViewController.xib */; };
+		5DCDB15B1520C781008F1955 /* CardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DCDB1591520C781008F1955 /* CardViewController.m */; };
+		5DCDB15C1520C781008F1955 /* CardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DCDB15A1520C781008F1955 /* CardViewController.xib */; };
 		C92C2142151DADAC0093755F /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C92C2133151DADAB0093755F /* Reachability.m */; };
 		C92C2143151DADAC0093755F /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = C92C2134151DADAB0093755F /* ASIAuthenticationDialog.m */; };
 		C92C2144151DADAC0093755F /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C92C2136151DADAB0093755F /* ASIFormDataRequest.m */; };
@@ -37,6 +45,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D28B7CC151DD25800A06DB6 /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
+		5D28B7CD151DD25800A06DB6 /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
+		5D28B7CE151DD25800A06DB6 /* ModalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalController.m; sourceTree = "<group>"; };
+		5D28B7CF151DD25800A06DB6 /* ModalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalController.h; sourceTree = "<group>"; };
+		5DCDB14B1520C554008F1955 /* OptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OptionViewController.h; path = /Users/preetdhillon/Documents/Ex/QRProjects/DanReader/OptionViewController.h; sourceTree = "<absolute>"; };
+		5DCDB14C1520C554008F1955 /* OptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OptionViewController.m; path = /Users/preetdhillon/Documents/Ex/QRProjects/DanReader/OptionViewController.m; sourceTree = "<absolute>"; };
+		5DCDB14D1520C554008F1955 /* OptionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OptionViewController.xib; path = /Users/preetdhillon/Documents/Ex/QRProjects/DanReader/OptionViewController.xib; sourceTree = "<absolute>"; };
+		5DCDB1521520C75B008F1955 /* ScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScanViewController.h; path = /Users/preetdhillon/Documents/Ex/QRProjects/DanReader/ScanViewController.h; sourceTree = "<absolute>"; };
+		5DCDB1531520C75B008F1955 /* ScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScanViewController.m; path = /Users/preetdhillon/Documents/Ex/QRProjects/DanReader/ScanViewController.m; sourceTree = "<absolute>"; };
+		5DCDB1541520C75B008F1955 /* ScanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ScanViewController.xib; path = /Users/preetdhillon/Documents/Ex/QRProjects/DanReader/ScanViewController.xib; sourceTree = "<absolute>"; };
+		5DCDB1581520C781008F1955 /* CardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardViewController.h; path = /Users/preetdhillon/Documents/Ex/QRProjects/DanReader/CardViewController.h; sourceTree = "<absolute>"; };
+		5DCDB1591520C781008F1955 /* CardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardViewController.m; path = /Users/preetdhillon/Documents/Ex/QRProjects/DanReader/CardViewController.m; sourceTree = "<absolute>"; };
+		5DCDB15A1520C781008F1955 /* CardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CardViewController.xib; path = /Users/preetdhillon/Documents/Ex/QRProjects/DanReader/CardViewController.xib; sourceTree = "<absolute>"; };
 		C92C2131151DADAB0093755F /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
 		C92C2132151DADAB0093755F /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		C92C2133151DADAB0093755F /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
@@ -105,6 +126,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D28B7CB151DCB6300A06DB6 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				C92C214B151DAEA10093755F /* constants.h */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		5D28B7D2151DD25D00A06DB6 /* XMLReader */ = {
+			isa = PBXGroup;
+			children = (
+				5D28B7CC151DD25800A06DB6 /* XMLReader.h */,
+				5D28B7CD151DD25800A06DB6 /* XMLReader.m */,
+			);
+			name = XMLReader;
+			sourceTree = "<group>";
+		};
+		5D28B7D3151DD26B00A06DB6 /* ModalController */ = {
+			isa = PBXGroup;
+			children = (
+				5D28B7CE151DD25800A06DB6 /* ModalController.m */,
+				5D28B7CF151DD25800A06DB6 /* ModalController.h */,
+			);
+			name = ModalController;
+			sourceTree = "<group>";
+		};
+		5DCDB1511520C557008F1955 /* OptionviewController */ = {
+			isa = PBXGroup;
+			children = (
+				5DCDB14B1520C554008F1955 /* OptionViewController.h */,
+				5DCDB14C1520C554008F1955 /* OptionViewController.m */,
+				5DCDB14D1520C554008F1955 /* OptionViewController.xib */,
+			);
+			name = OptionviewController;
+			sourceTree = "<group>";
+		};
+		5DCDB1571520C763008F1955 /* ScanViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5DCDB1521520C75B008F1955 /* ScanViewController.h */,
+				5DCDB1531520C75B008F1955 /* ScanViewController.m */,
+				5DCDB1541520C75B008F1955 /* ScanViewController.xib */,
+			);
+			name = ScanViewController;
+			sourceTree = "<group>";
+		};
+		5DCDB15D1520C787008F1955 /* CardViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5DCDB1581520C781008F1955 /* CardViewController.h */,
+				5DCDB1591520C781008F1955 /* CardViewController.m */,
+				5DCDB15A1520C781008F1955 /* CardViewController.xib */,
+			);
+			name = CardViewController;
+			sourceTree = "<group>";
+		};
 		C92C214A151DADB40093755F /* ASIHTTP */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,25 +206,25 @@
 			name = ASIHTTP;
 			sourceTree = "<group>";
 		};
-		C92C2151151DAF480093755F /* MBProresdsHu */ = {
+		C92C2151151DAF480093755F /* MBProgressHud */ = {
 			isa = PBXGroup;
 			children = (
 				C92C214E151DAF430093755F /* MBProgressHUD.h */,
 				C92C214F151DAF430093755F /* MBProgressHUD.m */,
 			);
-			name = MBProresdsHu;
+			name = MBProgressHud;
 			sourceTree = "<group>";
 		};
 		C9B762D5151D9F8200DC31CE = {
 			isa = PBXGroup;
 			children = (
-				C92C215A151DB2C10093755F /* libz.dylib */,
-				C92C2158151DB2A50093755F /* MobileCoreServices.framework */,
-				C92C2156151DB2710093755F /* SystemConfiguration.framework */,
-				C92C2154151DB2460093755F /* CFNetwork.framework */,
-				C92C2152151DB2270093755F /* Security.framework */,
-				C92C2151151DAF480093755F /* MBProresdsHu */,
-				C92C214B151DAEA10093755F /* constants.h */,
+				5DCDB15D1520C787008F1955 /* CardViewController */,
+				5DCDB1571520C763008F1955 /* ScanViewController */,
+				5DCDB1511520C557008F1955 /* OptionviewController */,
+				5D28B7D2151DD25D00A06DB6 /* XMLReader */,
+				5D28B7D3151DD26B00A06DB6 /* ModalController */,
+				C92C2151151DAF480093755F /* MBProgressHud */,
+				5D28B7CB151DCB6300A06DB6 /* Constants */,
 				C92C214A151DADB40093755F /* ASIHTTP */,
 				C9B76319151DA3B500DC31CE /* ForGottenViewController */,
 				C9B76313151DA38100DC31CE /* RegistrationViewController */,
@@ -170,6 +247,11 @@
 		C9B762E3151D9F8200DC31CE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C92C215A151DB2C10093755F /* libz.dylib */,
+				C92C2158151DB2A50093755F /* MobileCoreServices.framework */,
+				C92C2156151DB2710093755F /* SystemConfiguration.framework */,
+				C92C2154151DB2460093755F /* CFNetwork.framework */,
+				C92C2152151DB2270093755F /* Security.framework */,
 				C9B762E4151D9F8200DC31CE /* UIKit.framework */,
 				C9B762E6151D9F8200DC31CE /* Foundation.framework */,
 				C9B762E8151D9F8200DC31CE /* CoreGraphics.framework */,
@@ -294,6 +376,9 @@
 				C9B7630C151DA34F00DC31CE /* LoginViewController.xib in Resources */,
 				C9B76312151DA37D00DC31CE /* RegistrationViewController.xib in Resources */,
 				C9B76318151DA3B100DC31CE /* ForgottenViewController.xib in Resources */,
+				5DCDB14F1520C554008F1955 /* OptionViewController.xib in Resources */,
+				5DCDB1561520C75B008F1955 /* ScanViewController.xib in Resources */,
+				5DCDB15C1520C781008F1955 /* CardViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +403,11 @@
 				C92C2147151DADAC0093755F /* ASINetworkQueue.m in Sources */,
 				C92C2148151DADAC0093755F /* ASINSStringAdditions.m in Sources */,
 				C92C2150151DAF430093755F /* MBProgressHUD.m in Sources */,
+				5D28B7D0151DD25800A06DB6 /* XMLReader.m in Sources */,
+				5D28B7D1151DD25800A06DB6 /* ModalController.m in Sources */,
+				5DCDB14E1520C554008F1955 /* OptionViewController.m in Sources */,
+				5DCDB1551520C75B008F1955 /* ScanViewController.m in Sources */,
+				5DCDB15B1520C781008F1955 /* CardViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
