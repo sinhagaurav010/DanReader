@@ -56,7 +56,21 @@
         MBProgressHUD *hud=[MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
         hud.labelText=@"Checking...";
         
-        [NSTimer scheduledTimerWithTimeInterval:0 target:self selector:@selector(loadDataFromUrl) userInfo:nil repeats:NO];
+        NSURL *url = [NSURL URLWithString:URLLOGIN];
+        ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
+        
+        [request setValidatesSecureCertificate:NO];
+        
+        //    [request setUsername:txtFldEmail.text];
+        //    [request setValidatesSecureCertificate:NO];
+        [request  setPostValue:txtFldEmail.text forKey:@"email"];
+        [request   setPostValue:txtFldPswd.text forKey:@"pass"];
+        
+        [request setDelegate:self];
+        [request startAsynchronous];
+
+        
+//        [NSTimer scheduledTimerWithTimeInterval:0 target:self selector:@selector(loadDataFromUrl) userInfo:nil repeats:NO];
     }
     else
     {
@@ -68,8 +82,9 @@
 {
     NSURL *url = [NSURL URLWithString:URLLOGIN];
     ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
-    [request setUsername:txtFldEmail.text];
-    [request setValidatesSecureCertificate:NO];
+//    [request setUsername:txtFldEmail.text];
+//    [request setValidatesSecureCertificate:NO];
+    
     NSLog(@"login url=%@",request);
     [request setDelegate:self];
     [request startSynchronous];
@@ -102,7 +117,7 @@
 
 - (void)requestFailed:(ASIHTTPRequest *)request
 {
-    [MBProgressHUD hideHUDForView:self.view animated:YES];
+    [MBProgressHUD hideHUDForView:self.navigationController.view animated:YES];
     
     NSError *error = [request error];
     NSLog(@"Error %@",error);

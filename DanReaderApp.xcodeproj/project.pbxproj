@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C0F370815231FD900AD2615 /* OptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C0F370615231FD800AD2615 /* OptionViewController.m */; };
+		1C0F370915231FD900AD2615 /* OptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C0F370715231FD800AD2615 /* OptionViewController.xib */; };
+		1C0F37101523200000AD2615 /* CardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C0F370B1523200000AD2615 /* CardViewController.m */; };
+		1C0F37111523200000AD2615 /* CardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C0F370C1523200000AD2615 /* CardViewController.xib */; };
+		1C0F37121523200000AD2615 /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C0F370E1523200000AD2615 /* ScanViewController.m */; };
+		1C0F37131523200000AD2615 /* ScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C0F370F1523200000AD2615 /* ScanViewController.xib */; };
 		5D28B7D0151DD25800A06DB6 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D28B7CD151DD25800A06DB6 /* XMLReader.m */; };
 		5D28B7D1151DD25800A06DB6 /* ModalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D28B7CE151DD25800A06DB6 /* ModalController.m */; };
-		5DCDB14E1520C554008F1955 /* OptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DCDB14C1520C554008F1955 /* OptionViewController.m */; };
-		5DCDB14F1520C554008F1955 /* OptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DCDB14D1520C554008F1955 /* OptionViewController.xib */; };
-		5DCDB1551520C75B008F1955 /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DCDB1531520C75B008F1955 /* ScanViewController.m */; };
-		5DCDB1561520C75B008F1955 /* ScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DCDB1541520C75B008F1955 /* ScanViewController.xib */; };
-		5DCDB15B1520C781008F1955 /* CardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DCDB1591520C781008F1955 /* CardViewController.m */; };
-		5DCDB15C1520C781008F1955 /* CardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DCDB15A1520C781008F1955 /* CardViewController.xib */; };
 		C92C2142151DADAC0093755F /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C92C2133151DADAB0093755F /* Reachability.m */; };
 		C92C2143151DADAC0093755F /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = C92C2134151DADAB0093755F /* ASIAuthenticationDialog.m */; };
 		C92C2144151DADAC0093755F /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C92C2136151DADAB0093755F /* ASIFormDataRequest.m */; };
@@ -45,19 +45,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C0F370515231FD800AD2615 /* OptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionViewController.h; sourceTree = "<group>"; };
+		1C0F370615231FD800AD2615 /* OptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionViewController.m; sourceTree = "<group>"; };
+		1C0F370715231FD800AD2615 /* OptionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OptionViewController.xib; sourceTree = "<group>"; };
+		1C0F370A1523200000AD2615 /* CardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardViewController.h; sourceTree = "<group>"; };
+		1C0F370B1523200000AD2615 /* CardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardViewController.m; sourceTree = "<group>"; };
+		1C0F370C1523200000AD2615 /* CardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardViewController.xib; sourceTree = "<group>"; };
+		1C0F370D1523200000AD2615 /* ScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanViewController.h; sourceTree = "<group>"; };
+		1C0F370E1523200000AD2615 /* ScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanViewController.m; sourceTree = "<group>"; };
+		1C0F370F1523200000AD2615 /* ScanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanViewController.xib; sourceTree = "<group>"; };
 		5D28B7CC151DD25800A06DB6 /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
 		5D28B7CD151DD25800A06DB6 /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
 		5D28B7CE151DD25800A06DB6 /* ModalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalController.m; sourceTree = "<group>"; };
 		5D28B7CF151DD25800A06DB6 /* ModalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalController.h; sourceTree = "<group>"; };
-		5DCDB14B1520C554008F1955 /* OptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OptionViewController.h; path = /Users/preetdhillon/Documents/Ex/QRProjects/DanReader/OptionViewController.h; sourceTree = "<absolute>"; };
-		5DCDB14C1520C554008F1955 /* OptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OptionViewController.m; path = /Users/preetdhillon/Documents/Ex/QRProjects/DanReader/OptionViewController.m; sourceTree = "<absolute>"; };
-		5DCDB14D1520C554008F1955 /* OptionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OptionViewController.xib; path = /Users/preetdhillon/Documents/Ex/QRProjects/DanReader/OptionViewController.xib; sourceTree = "<absolute>"; };
-		5DCDB1521520C75B008F1955 /* ScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScanViewController.h; path = /Users/preetdhillon/Documents/Ex/QRProjects/DanReader/ScanViewController.h; sourceTree = "<absolute>"; };
-		5DCDB1531520C75B008F1955 /* ScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScanViewController.m; path = /Users/preetdhillon/Documents/Ex/QRProjects/DanReader/ScanViewController.m; sourceTree = "<absolute>"; };
-		5DCDB1541520C75B008F1955 /* ScanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ScanViewController.xib; path = /Users/preetdhillon/Documents/Ex/QRProjects/DanReader/ScanViewController.xib; sourceTree = "<absolute>"; };
-		5DCDB1581520C781008F1955 /* CardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardViewController.h; path = /Users/preetdhillon/Documents/Ex/QRProjects/DanReader/CardViewController.h; sourceTree = "<absolute>"; };
-		5DCDB1591520C781008F1955 /* CardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardViewController.m; path = /Users/preetdhillon/Documents/Ex/QRProjects/DanReader/CardViewController.m; sourceTree = "<absolute>"; };
-		5DCDB15A1520C781008F1955 /* CardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CardViewController.xib; path = /Users/preetdhillon/Documents/Ex/QRProjects/DanReader/CardViewController.xib; sourceTree = "<absolute>"; };
 		C92C2131151DADAB0093755F /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
 		C92C2132151DADAB0093755F /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		C92C2133151DADAB0093755F /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
@@ -155,9 +155,9 @@
 		5DCDB1511520C557008F1955 /* OptionviewController */ = {
 			isa = PBXGroup;
 			children = (
-				5DCDB14B1520C554008F1955 /* OptionViewController.h */,
-				5DCDB14C1520C554008F1955 /* OptionViewController.m */,
-				5DCDB14D1520C554008F1955 /* OptionViewController.xib */,
+				1C0F370515231FD800AD2615 /* OptionViewController.h */,
+				1C0F370615231FD800AD2615 /* OptionViewController.m */,
+				1C0F370715231FD800AD2615 /* OptionViewController.xib */,
 			);
 			name = OptionviewController;
 			sourceTree = "<group>";
@@ -165,9 +165,9 @@
 		5DCDB1571520C763008F1955 /* ScanViewController */ = {
 			isa = PBXGroup;
 			children = (
-				5DCDB1521520C75B008F1955 /* ScanViewController.h */,
-				5DCDB1531520C75B008F1955 /* ScanViewController.m */,
-				5DCDB1541520C75B008F1955 /* ScanViewController.xib */,
+				1C0F370D1523200000AD2615 /* ScanViewController.h */,
+				1C0F370E1523200000AD2615 /* ScanViewController.m */,
+				1C0F370F1523200000AD2615 /* ScanViewController.xib */,
 			);
 			name = ScanViewController;
 			sourceTree = "<group>";
@@ -175,9 +175,9 @@
 		5DCDB15D1520C787008F1955 /* CardViewController */ = {
 			isa = PBXGroup;
 			children = (
-				5DCDB1581520C781008F1955 /* CardViewController.h */,
-				5DCDB1591520C781008F1955 /* CardViewController.m */,
-				5DCDB15A1520C781008F1955 /* CardViewController.xib */,
+				1C0F370A1523200000AD2615 /* CardViewController.h */,
+				1C0F370B1523200000AD2615 /* CardViewController.m */,
+				1C0F370C1523200000AD2615 /* CardViewController.xib */,
 			);
 			name = CardViewController;
 			sourceTree = "<group>";
@@ -376,9 +376,9 @@
 				C9B7630C151DA34F00DC31CE /* LoginViewController.xib in Resources */,
 				C9B76312151DA37D00DC31CE /* RegistrationViewController.xib in Resources */,
 				C9B76318151DA3B100DC31CE /* ForgottenViewController.xib in Resources */,
-				5DCDB14F1520C554008F1955 /* OptionViewController.xib in Resources */,
-				5DCDB1561520C75B008F1955 /* ScanViewController.xib in Resources */,
-				5DCDB15C1520C781008F1955 /* CardViewController.xib in Resources */,
+				1C0F370915231FD900AD2615 /* OptionViewController.xib in Resources */,
+				1C0F37111523200000AD2615 /* CardViewController.xib in Resources */,
+				1C0F37131523200000AD2615 /* ScanViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,9 +405,9 @@
 				C92C2150151DAF430093755F /* MBProgressHUD.m in Sources */,
 				5D28B7D0151DD25800A06DB6 /* XMLReader.m in Sources */,
 				5D28B7D1151DD25800A06DB6 /* ModalController.m in Sources */,
-				5DCDB14E1520C554008F1955 /* OptionViewController.m in Sources */,
-				5DCDB1551520C75B008F1955 /* ScanViewController.m in Sources */,
-				5DCDB15B1520C781008F1955 /* CardViewController.m in Sources */,
+				1C0F370815231FD900AD2615 /* OptionViewController.m in Sources */,
+				1C0F37101523200000AD2615 /* CardViewController.m in Sources */,
+				1C0F37121523200000AD2615 /* ScanViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

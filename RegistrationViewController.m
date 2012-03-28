@@ -162,7 +162,7 @@
         [ModalController FuncAlertMsg:@"Zip code should be 5 digits." inController:nil];
         return; 
     }
-    if([[[arrayTxtFld objectAtIndex:6]text] length]<6 || [[[arrayTxtFld objectAtIndex:6]text] length]>20)
+    if([[[arrayTxtFld objectAtIndex:6]text] length]<6 && [[[arrayTxtFld objectAtIndex:6]text] length]>20)
     {
         [ModalController FuncAlertMsg:@"Password should be 6(min.) to 20(max.)." inController:nil];
         return; 
@@ -186,7 +186,9 @@
     [request setPostValue:[[arrayTxtFld objectAtIndex:6]text] forKey:@"pass"];
     NSLog(@"login url=%@",request);
     [request setDelegate:self];
-    [request startSynchronous];
+    [request  setValidatesSecureCertificate:NO];
+    
+    [request startAsynchronous];
 }
 #pragma mark-ASIHTTP DELEGATES
 - (void)requestFinished:(ASIHTTPRequest *)request
@@ -222,7 +224,7 @@
 
 - (void)requestFailed:(ASIHTTPRequest *)request
 {
-    [MBProgressHUD hideHUDForView:self.view animated:YES];
+    [MBProgressHUD hideHUDForView:self.navigationController.view animated:YES];
     
     NSError *error = [request error];
     NSLog(@"Error %@",error);
